@@ -38,8 +38,28 @@ class Airplane {
 */
 
 class Person {
+  constructor(attributes){
+    this.name=attributes.name;
+    this.age=attributes.age;
+   
+    this.stomach=[];
+  }
+  greet(){
+    return `${this.name}, ${this.age}`
+  };
+  eat(edible){
+    if(this.stomach.length<10){
+      this.stomach.push(edible);
+    }
+    
+  }
 
-}
+};
+const personOne= new Person({
+  name:'Julie',
+  age:23,
+})
+console.log(personOne.greet());
 
 /*
   TASK 2
