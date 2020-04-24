@@ -1,29 +1,5 @@
-/*
-  EXAMPLE TASK:
-    - Write an Airplane class whose constructor initializes `name` from an argument.
-    - All airplanes built with Airplane should initialize with an `isFlying` property of false.
-    - Give airplanes the ability to `.takeOff()` and `.land()`:
-        + If a plane takes off, its `isFlying` property gets set to true.
-        + If a plane lands, its `isFlying` property gets set to false.
-*/
-
-// EXAMPLE SOLUTION CODE:
-class Airplane {
-  constructor(name) {
-    this.name = name;
-    this.isFlying = false;
-  }
-  takeOff() {
-    this.isFlying = true;
-  }
-  land() {
-    this.isFlying = false;
-  }
-}
-
-/*
-// 👇 COMPLETE YOUR WORK BELOW 👇
-// 👇 COMPLETE YOUR WORK BELOW 👇
+h
+// 👇 COMPLETE YOUR WORK BELOW hh👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
 */
 
@@ -47,7 +23,7 @@ class Person {
 /*
   TASK 2
     - Write a Car class whose constructor initializes `model` and `milesPerGallon` from arguments.
-    - All instances built with Car:
+    - All instances lt with Car:
         + should initialize with a `tank` at 0
         + should initialize with an `odometer` at 0
     - Give cars the ability to get fueled with a `.fill(gallons)` method. Add the gallons to `tank`.
@@ -57,7 +33,7 @@ class Person {
     - A car which runs out of `fuel` while driving can't drive any more distance:
         + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
 */
-
+m
 class Car {
 
 }
