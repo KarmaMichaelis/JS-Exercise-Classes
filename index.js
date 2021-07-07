@@ -20,12 +20,9 @@ class Airplane {
     this.isFlying = false;
   }
 }
+// 👇 COMPLETE YOUR WORK BELOW hh👇
+// 👇 COMPLETE YOUR WORK BELOW 👇
 
-/*
-// 👇 COMPLETE YOUR WORK BELOW 👇
-// 👇 COMPLETE YOUR WORK BELOW 👇
-// 👇 COMPLETE YOUR WORK BELOW 👇
-*/
 
 /*
   TASK 1
@@ -41,13 +38,33 @@ class Airplane {
 */
 
 class Person {
+  constructor(attributes){
+    this.name=attributes.name;
+    this.age=attributes.age;
+   
+    this.stomach=[];
+  }
+  greet(){
+    return `${this.name}, ${this.age}`
+  };
+  eat(edible){
+    if(this.stomach.length<10){
+      this.stomach.push(edible);
+    }
+    
+  }
 
-}
+};
+const personOne= new Person({
+  name:'Julie',
+  age:23,
+})
+console.log(personOne.greet());
 
 /*
   TASK 2
     - Write a Car class whose constructor initializes `model` and `milesPerGallon` from arguments.
-    - All instances built with Car:
+    - All instances lt with Car:
         + should initialize with a `tank` at 0
         + should initialize with an `odometer` at 0
     - Give cars the ability to get fueled with a `.fill(gallons)` method. Add the gallons to `tank`.
